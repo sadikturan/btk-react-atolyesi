@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function EmptyCart() {
   return (
     <div className="min-h-[60vh] flex items-center justify-center">
@@ -17,12 +19,12 @@ export default function EmptyCart() {
         <p className="mt-2 text-gray-600">
           Alışverişe başlamak için bir ürün sayfasına gidebilirsiniz.
         </p>
-        <a
+        <Link
           href="/"
           className="mt-6 inline-flex items-center justify-center rounded-xl bg-indigo-600 text-white px-5 py-2 hover:bg-indigo-700 transition"
         >
           Alışverişe Dön
-        </a>
+        </Link>
       </div>
     </div>
   );

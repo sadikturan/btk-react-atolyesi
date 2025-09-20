@@ -7,6 +7,7 @@ import {
 } from "@/store/cartSlice";
 import { formatPrice } from "@/utils/format";
 import { useDispatch, useSelector } from "react-redux";
+import Image from "next/link";
 
 export default function CartItem({ item }) {
   const dispatch = useDispatch();
@@ -43,7 +44,7 @@ export default function CartItem({ item }) {
       className="flex items-center gap-4 rounded-xl border bg-white p-4 shadow-sm hover:shadow-md"
     >
       <div className="w-16 h-16 flex-shrink-0">
-        <img
+        <Image
           src={item.image || "placeholder.jpg"}
           alt={item.name}
           className="h-full w-hull object-cover object-center"

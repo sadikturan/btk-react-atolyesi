@@ -12,7 +12,7 @@ export default function OrdersPage() {
     const fetchOrders = async () => {
       try {
         const res = await get_admin_orders();
-        setOrders(res.data);
+        setOrders(res);
       } catch (err) {
         console.log("Siparişler alınamadı:", err);
       } finally {

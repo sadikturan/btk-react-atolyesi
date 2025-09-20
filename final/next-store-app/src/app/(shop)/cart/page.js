@@ -12,7 +12,8 @@ export default function CartPage() {
   const items = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
-  const { isAuthenticated } = useSelector((state) => state.auth);
+  const auth = useSelector((state) => state.auth);
+  const isAuthenticated = auth?.isAuthenticated || false;
 
   const handleClearCart = () => {
     if (isAuthenticated) {

@@ -8,7 +8,7 @@ export default function FeaturedProductList({ products }) {
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="mb-4 flex items-center justify-between md:mb-8">
           <h1 className="text-xl font-semibold text-gray-900 sm:text-2xl">
-            Featured Products
+            Öne Çıkan Ürünler
           </h1>
           <Link
             href="/products"

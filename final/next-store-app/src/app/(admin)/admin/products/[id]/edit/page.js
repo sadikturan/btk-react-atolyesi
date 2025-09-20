@@ -8,6 +8,7 @@ import {
 } from "@/lib/api";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function EditProduct() {
   const { id } = useParams();
@@ -65,7 +66,7 @@ export default function EditProduct() {
               key={img.id}
               className="border border-gray-200 rounded overflow-hidden flex flex-col items-ceter m-2"
             >
-              <img
+              <Image
                 src={img.image}
                 alt={img.alt_text}
                 className="w-full h-32 object-cover"
